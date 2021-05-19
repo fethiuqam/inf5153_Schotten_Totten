@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Card {
+    + this(value : Value, color : Color)
+    }
+
+enum Value {
+    One
+    Two
+    Three
+    Four
+    Five
+    Six
+    Seven
+    Eight
+    Nine
+}
+
+enum Color {
+    Green
+    Blue
+    Red
+    Yellow
+    Purple
+    Brown
+}
+
+Card --> Color
+Card --> Value
+
+@enduml
