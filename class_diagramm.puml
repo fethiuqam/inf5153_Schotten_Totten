@@ -1,0 +1,14 @@
+@startuml
+
+class Card {}
+
+class CardPile{
+
+    + new()
+    + draw() : Card
+    - shuffle()
+}
+
+CardPile *--> "0..54 - cards {ordered}" Card
+
+@enduml
